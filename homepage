@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCare</title>
+    <style>
+        /* Style for the white background */
+        body {
+            background-color: #f3f3f3;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+ 
+        /* Style for the black boxes */
+ 
+        .flex-container {
+            display: flex;
+        }
+ 
+        .flex-child {
+            flex: 1;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            margin: 20px;
+            margin-top: 40px;
+            height: 500px;
+            width: 200px;
+        }  
+ 
+        .flex-child:first-child {
+            margin-right: 20px;
+        }
+ 
+        /* Style for the blue buttons */
+        .blue-button {
+            background-color: #0074D9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+ 
+        /* Style for the image */
+        .my-image {
+            max-width: 30%;
+            color: #98b4cc;
+            border-radius: 25%;
+            height: 120px;
+            width: 120px;
+            display: block;
+            margin: 20px auto;
+        }
+       
+        /* Add a black background color to the top bar */
+        .topbar {
+        background-color: #333;
+        overflow: hidden;
+        }
+ 
+        /* Style the links inside the navigation bar */
+        .topbar a {
+        float: left;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 19px;
+        font-style: oblique;
+        font-family:  Georgia;
+        }
+ 
+        .topbar c {
+        float: left;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <a class="active" href="#wecare">WeCare</a>
+        <b style="float:right"><c class="active" href="#contact">Call 1800 54638 37438</c></b>
+    </div>
+ 
+ 
+    <h1>We are at the heart of appropriate care</h1>
+    <div class="flex-container">
+            <div class="flex-child 1">
+            <img class="my-image" src="../images/coach.jpg" alt="Placeholder Image">
+            <button class="blue-button">Login as a Coach!</button>
+            <button class="blue-button">Join as a Coach</button>
+           
+        </div>
+ 
+        <div class="flex-child 2">
+            <img class="my-image" src="../images/stud.jpg" alt="Placeholder Image">
+            <button class="blue-button">Login as a User</button>
+            <button class="blue-button">Join as a User</button>
+           
+        </div>
+    </div>
+</body>
+</html>
+ 

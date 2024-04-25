@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main {
+            background-color: #000000;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            width: 500px; /* Adjust the width as needed */
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 20px; /* Gap between columns */
+        }
+        .main h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+            grid-column: span 2; /* Span both columns */
+            font-size: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 80%;
+            margin-bottom: 15px;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: auto;
+            grid-column: span 2; /* Span both columns */
+            text-align: center;
+            font-size: 16px;
+        }
+        .my-image {
+            max-width: 30%;
+            color: #98b4cc;
+            border-radius: 25%;
+            height: 70px;
+            width: 70px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2><img class="my-image" src="OIP.jfif" alt="Placeholder Image">User Profile Registration</h2>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+ 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+ 
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="city">Enter your city:</label>
+            <input type="text" id="city" name="city">
+
+          
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+ 
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required>
+ 
+            
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="pincode">pincode:</label>
+            <input type="text" id="pincode" name="mobile" maxlength="6" required>
+
+        </div>
+        <div>
+
+            <label for="state">Enter your state:</label>
+            <input type="text" id="state" name="state">
+        </div>
+        <div>
+            <label for="country">Enter your country:</label>
+            <input type="text" id="country" name="country">
+
+            
+        </div>
+        <button type="submit">Register</button>
+    </div>
+</body>
+</html>
